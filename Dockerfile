@@ -4,5 +4,5 @@ LABEL maintainer="mrfroop <fredrik@jambren.com>"
 
 WORKDIR $GOPATH
 
-RUN go get -u gopkg.in/alecthomas/gometalinter.v1.2.1 \
+RUN go get -u gopkg.in/alecthomas/gometalinter \
        && gometalinter --install
