@@ -9,3 +9,5 @@ RUN apk --no-cache add \
 
 RUN go get -u github.com/alecthomas/gometalinter \
        && gometalinter --install
+
+ENV PATH $PATH:$GOPATH/bin
