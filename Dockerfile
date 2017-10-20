@@ -5,7 +5,6 @@ LABEL maintainer="mrfroop <fredrik@jambren.com>"
 RUN apk --no-cache add \
 	git
 
-RUN go get -u github.com/alecthomas/gometalinter \
-       && gometalinter --install
+RUN go get -u github.com/golang/lint/golint
 
 WORKDIR $GOPATH
